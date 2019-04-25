@@ -14,7 +14,7 @@
   <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
   integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
   crossorigin=""></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.min.js"></script>
   <!-- d3 JS -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
 
@@ -25,6 +25,7 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/crimes.css') }}">
 
 </head>
 
@@ -56,12 +57,27 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <br />
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+  <!--       Chart.js Canvas Tag -->
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+
+
 
   <!-- <script src="https://cdn.plot.ly/plotly-1.31.2.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="{{ url_for('static', filename='js/logic.js') }}"></script>
   <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="{{ url_for('static', filename='js/crimes.js') }}"></script>
 </body>
 
 </html>

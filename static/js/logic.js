@@ -30,7 +30,7 @@ var baseURL="/data"
 var layer;
 function buildCharts(filter) {
   var chart_url=baseURL.concat("?OFFENSE='",filter.offense,"'&WARD=",filter.ward.toString())
-  console.log(filter.offense);
+  //console.log(filter.offense);
   //building the map
   d3.json(chart_url).then((response) => {
     var markers = L.markerClusterGroup();
@@ -218,9 +218,9 @@ function filterSubmit() {
 
   // Select inputs from the filter dropdowns
   var offenseFilter = d3.select("#selType").node().value;
-  console.log(offenseFilter);
+  //console.log(offenseFilter);
   var wardFilter = d3.select("#selWard").node().value;
-  console.log(wardFilter);
+  //console.log(wardFilter);
 
   var filter = {
     offense: offenseFilter,
