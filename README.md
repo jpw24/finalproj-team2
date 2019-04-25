@@ -1,2 +1,2 @@
-# finalproj-team2
-Team 2 stuff for final project
+# project-3-team2
+Project Repo for Jimmy, Mario, Tim, and Reena
